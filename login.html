@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Sayfası</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .login {
+            width: 320px;
+            margin: 120px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .remember-me {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="login">
+        <h2>Giriş Yap</h2>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="E-posta adresinizi girin" required>
+            <input type="password" name="password" placeholder="Şifrenizi girin" required>
+
+            <div class="remember-me">
+                <label>
+                    <input type="checkbox" name="remember">
+                    Beni Hatırla
+                </label>
+            </div>
+
+            <button type="submit">Giriş Yap</button>
+        </form>
+        <a href="signup.html">Hesabın yok mu? Kayıt Ol</a>
+    </div>
+
+</body>
+</html>
